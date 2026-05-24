@@ -1,8 +1,12 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { queryOptions, useSuspenseQuery } from "@tanstack/react-query";
+import { ArrowRight } from "lucide-react";
 import { listProperties } from "@/lib/properties.functions";
 import { Hero } from "@/components/Hero";
 import { PropertyGrid } from "@/components/PropertyGrid";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { SectionHeader } from "@/components/SectionHeader";
 
 const propertiesQuery = queryOptions({
   queryKey: ["properties"],
@@ -12,43 +16,50 @@ const propertiesQuery = queryOptions({
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mandela-Max Properties — Futuristic Real Estate in Nairobi" },
+      { title: "Mandela-Max Properties — Boutique Nairobi Real Estate" },
       {
         name: "description",
         content:
-          "Curated luxury apartments, townhouses, and executive residences for rent and sale across Nairobi. Move in within 48 hours.",
-      },
-      { property: "og:title", content: "Mandela-Max Properties" },
-      {
-        property: "og:description",
-        content: "Futuristic real estate listings across Nairobi.",
+          "Boutique luxury residences, executive suites, and family villas curated across Nairobi.",
       },
     ],
   }),
-  loader: ({ context }) =>
-    context.queryClient.ensureQueryData(propertiesQuery),
+  loader: ({ context }) => context.queryClient.ensureQueryData(propertiesQuery),
   component: Index,
 });
 
 function Index() {
   const { data: properties } = useSuspenseQuery(propertiesQuery);
+  const featured = properties.filter((p) => p.is_featured).slice(0, 5);
 
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <main className="min-h-screen bg-stone-950 text-stone-100">
+      <Navbar />
       <Hero />
-      <PropertyGrid properties={properties} />
 
-      <footer className="border-t border-white/5 bg-slate-950 py-10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-slate-400 md:flex-row">
-          <p>
-            © {new Date().getFullYear()} Mandela-Max Properties. Built for the
-            future.
-          </p>
-          <p className="text-xs uppercase tracking-[0.2em] text-emerald-400">
-            Nairobi · Kenya
-          </p>
+      <section id="featured" className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
+        <div className="mb-12 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+          <SectionHeader
+            eyebrow="Featured Residences"
+            title={
+              <>
+                Curated for those who <em className="text-gradient-gold not-italic">notice</em>
+              </>
+            }
+            subtitle="A small, deliberate edit of our most exceptional homes and suites — each one verified, photographed, and ready to receive its next chapter."
+          />
+          <Link
+            to="/listings"
+            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-gold hover:text-stone-100"
+          >
+            View All Listings <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
-      </footer>
+
+        <PropertyGrid properties={featured.length ? featured : properties.slice(0, 5)} />
+      </section>
+
+      <Footer />
     </main>
   );
 }
