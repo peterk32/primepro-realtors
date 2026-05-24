@@ -1,0 +1,3 @@
+INSERT INTO public.properties (title, slug, type, location, price, bedrooms, bathrooms, main_image, is_featured) VALUES
+('Executive Office Suite at Pili Trade Centre', 'executive-office-suite-pili-trade-centre', 'rent', 'Pili Trade Centre, Mombasa Road', 145000, 0, 2, '/src/assets/property-4.jpg', true),
+('Boutique 5 Bedroom Garden Villa', 'boutique-5-bedroom-garden-villa', 'sale', 'Syokimau', 32000000, 5, 4, '/src/assets/property-5.jpg', true);
