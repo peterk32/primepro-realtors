@@ -9,7 +9,7 @@
     "build:dev": "vite build --mode development",
     "build:render": "vite build --config vite.config.render.ts",
     "preview": "vite preview",
-    "start": "node .output/server/index.mjs",
+    "start": "node dist/server/server.js",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
