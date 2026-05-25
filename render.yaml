@@ -1,0 +1,28 @@
+# Render Blueprint — deploys this TanStack Start app as a Node web service.
+# After pushing to GitHub: in Render dashboard → New → Blueprint → pick this repo.
+services:
+  - type: web
+    name: mandela-max-properties
+    runtime: node
+    plan: free
+    region: frankfurt # change if you prefer oregon / singapore / ohio
+    buildCommand: npm install && npm run build:render
+    startCommand: node .output/server/index.mjs
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      # --- Public (build-time, baked into client bundle) ---
+      - key: VITE_SUPABASE_URL
+        sync: false
+      - key: VITE_SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: VITE_SUPABASE_PROJECT_ID
+        sync: false
+      # --- Server-only (runtime) ---
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
