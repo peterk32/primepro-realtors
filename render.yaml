@@ -6,12 +6,14 @@ services:
     runtime: node
     plan: free
     region: frankfurt # change if you prefer oregon / singapore / ohio
-    buildCommand: npm install && npm run build:render
+    buildCommand: npm install --include=dev && npm run build:render
     startCommand: node .output/server/index.mjs
     autoDeploy: true
     envVars:
       - key: NODE_VERSION
         value: "20"
+      - key: NPM_CONFIG_PRODUCTION
+        value: "false"
       # --- Public (build-time, baked into client bundle) ---
       - key: VITE_SUPABASE_URL
         sync: false
