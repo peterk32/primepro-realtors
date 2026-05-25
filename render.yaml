@@ -6,8 +6,8 @@ services:
     runtime: node
     plan: free
     region: frankfurt # change if you prefer oregon / singapore / ohio
-    buildCommand: npm install --include=dev && npm run build:render
-    startCommand: node .output/server/index.mjs
+    buildCommand: npm ci && npm run build:render
+    startCommand: npm start
     autoDeploy: true
     envVars:
       - key: NODE_VERSION
