@@ -8,7 +8,8 @@ Lovable Preview still runs with Lovable's own development server.
 - `vite.config.render.ts` — Node SSR build config (no Cloudflare plugin)
 - `render.yaml` — Render Blueprint (web service, free plan, Node 20)
 - `npm run build` / `npm run build:render` — scripts that use the Render config
-- `npm start` already runs `node dist/server/server.js`
+- `render-server.mjs` — small Node server wrapper required by Render
+- `npm start` already runs `node render-server.mjs`
 
 ## One-time setup
 
@@ -20,7 +21,7 @@ Use Lovable's GitHub integration (top-right → GitHub → Connect) or push manu
 2. Connect your GitHub repo
 3. Use these commands if Render asks:
    - **Build Command:** `npm ci --include=dev && npm run build`
-   - **Start Command:** `node dist/server/server.js`
+   - **Start Command:** `npm start`
 
 You can also create it as a **Blueprint**; Render will read `render.yaml` automatically.
 
