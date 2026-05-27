@@ -1,14 +1,15 @@
 # Deploying Mandela-Max Properties to Render (Free Tier)
 
-This project's normal `vite build` targets Cloudflare Workers (used by Lovable).
-For Render we use a **parallel** Node build — nothing about the app code changes.
+This project is configured so Render's default `npm run build` creates a Node SSR build.
+Lovable Preview still runs with Lovable's own development server.
 
 ## What was added
 
 - `vite.config.render.ts` — Node SSR build config (no Cloudflare plugin)
 - `render.yaml` — Render Blueprint (web service, free plan, Node 20)
-- `npm run build:render` — script that uses the Render config
-- `npm start` already runs `node .output/server/index.mjs`
+- `npm run build` / `npm run build:render` — scripts that use the Render config
+- `render-server.mjs` — small Node server wrapper required by Render
+- `npm start` already runs `node render-server.mjs`
 
 ## One-time setup
 
@@ -16,9 +17,13 @@ For Render we use a **parallel** Node build — nothing about the app code chang
 Use Lovable's GitHub integration (top-right → GitHub → Connect) or push manually.
 
 ### 2. Create the Render service
-1. Go to <https://dashboard.render.com> → **New +** → **Blueprint**
-2. Connect your GitHub repo → Render reads `render.yaml` automatically
-3. Click **Apply**
+1. Go to <https://dashboard.render.com> → **New +** → **Web Service**
+2. Connect your GitHub repo
+3. Use these commands if Render asks:
+   - **Build Command:** `npm ci --include=dev && npm run build`
+   - **Start Command:** `npm start`
+
+You can also create it as a **Blueprint**; Render will read `render.yaml` automatically.
 
 ### 3. Set environment variables
 In the Render dashboard → your service → **Environment**, paste these values
@@ -46,7 +51,8 @@ Your site goes live at `https://mandela-max-properties.onrender.com`
 
 ## Local test of the Render build
 ```bash
-npm run build:render
+npm ci --include=dev
+npm run build
 npm start
 # open http://localhost:3000
 ```

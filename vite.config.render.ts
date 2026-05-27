@@ -17,10 +17,7 @@ export default defineConfig({
   plugins: [
     tsConfigPaths({ projects: ["./tsconfig.json"] }),
     tailwindcss(),
-    tanstackStart({
-      // Use TanStack Start's default Node server entry (no Cloudflare wrapper).
-      target: "node-server",
-    }),
+    tanstackStart(),
     viteReact(),
   ],
 });

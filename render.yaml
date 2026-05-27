@@ -6,7 +6,7 @@ services:
     runtime: node
     plan: free
     region: frankfurt # change if you prefer oregon / singapore / ohio
-    buildCommand: npm ci && npm run build:render
+    buildCommand: npm ci --include=dev && npm run build
     startCommand: npm start
     autoDeploy: true
     envVars:
