@@ -7,7 +7,7 @@ services:
     plan: free
     region: frankfurt # change if you prefer oregon / singapore / ohio
     buildCommand: npm ci --include=dev && npm run build
-    startCommand: npm start
+    startCommand: node dist/server/server.js
     autoDeploy: true
     envVars:
       - key: NODE_VERSION
