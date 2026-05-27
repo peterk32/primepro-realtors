@@ -10,7 +10,7 @@
     "build:render": "vite build --config vite.config.render.ts",
     "build:lovable": "vite build",
     "preview": "vite preview",
-    "start": "node dist/server/server.js",
+    "start": "node render-server.mjs",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
