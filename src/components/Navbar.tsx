@@ -32,10 +32,10 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-3">
           <span className="grid h-10 w-10 place-items-center rounded-sm border border-gold/40 bg-stone-950/60 font-serif text-lg text-gold">
-            k
+            H
           </span>
           <span className="font-serif text-xl tracking-wide text-stone-50">
-            kesmart <span className="text-gold">homes</span>
+            Hines <span className="text-gold">Properties</span>
           </span>
         </Link>
 
