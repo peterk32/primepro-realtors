@@ -32,10 +32,10 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-3">
           <span className="grid h-10 w-10 place-items-center rounded-sm border border-gold/40 bg-stone-950/60 font-serif text-lg text-gold">
-            H
+            L
           </span>
           <span className="font-serif text-xl tracking-wide text-stone-50">
-            Hines <span className="text-gold">Properties</span>
+            lulu means <span className="text-gold">Properties</span>
           </span>
         </Link>
 
@@ -60,7 +60,7 @@ export function Navbar() {
             );
           })}
           <a
-            href="https://wa.me/254972055584"
+            href="https://wa.me/25497205584"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-4 rounded-sm border border-gold/60 bg-gold/10 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.22em] text-gold transition hover:bg-gold hover:text-stone-950"

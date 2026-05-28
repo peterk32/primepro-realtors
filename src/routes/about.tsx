@@ -7,11 +7,11 @@ import aboutImg from "@/assets/about.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — kesmarthomes" },
+      { title: "About — lulu mean" },
       {
         name: "description",
         content:
-          "The story behind Mandela-Max: a Nairobi atelier curating boutique luxury properties from our Pili Trade Centre headquarters.",
+          "The story behind lulu means: a Nairobi atelier curating boutique luxury properties from our Pili Trade Centre headquarters.",
       },
     ],
   }),
@@ -52,7 +52,7 @@ function AboutPage() {
               eyebrow="Our Story"
               title={<>A boutique house, <em className="text-gradient-gold not-italic">quietly</em> changing how Nairobi lives.</>}
               subtitle="
-Hines Kenya began with a simple conviction: that finding a home should feel as considered as the home itself. From our headquarters at Pili Trade Centre, we curate residences and executive suites for a community of clients who notice the details."
+lulu means Kenya began with a simple conviction: that finding a home should feel as considered as the home itself. From our headquarters at Pili Trade Centre, we curate residences and executive suites for a community of clients who notice the details."
             />
             <div className="mt-10 flex flex-wrap gap-3">
               <Link to="/listings" className="rounded-sm bg-gold px-6 py-3 text-xs font-medium uppercase tracking-[0.22em] text-stone-950 hover:bg-[#d4b890]">

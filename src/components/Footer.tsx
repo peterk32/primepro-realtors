@@ -8,10 +8,10 @@ export function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-sm border border-gold/40 bg-stone-900 font-serif text-lg text-gold">
-              H
+              L
             </span>
             <span className="font-serif text-xl text-stone-50">
-              Hines <span className="text-gold">Properties</span>
+              lulumean <span className="text-gold">Properties</span>
             </span>
           </div>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-stone-400">
@@ -39,8 +39,8 @@ export function Footer() {
           </h4>
           <ul className="space-y-3 text-sm text-stone-300">
             <li className="flex gap-2"><MapPin className="h-4 w-4 shrink-0 text-gold" /> Thika road, Thika Kenya</li>
-            <li className="flex gap-2"><Phone className="h-4 w-4 shrink-0 text-gold" /> +254 703 699 498</li>
-            <li className="flex gap-2"><Mail className="h-4 w-4 shrink-0 text-gold" /> hello@HinesKenya.co.ke</li>
+            <li className="flex gap-2"><Phone className="h-4 w-4 shrink-0 text-gold" /> +254 797 205 584</li>
+            <li className="flex gap-2"><Mail className="h-4 w-4 shrink-0 text-gold" /> hello@mean.co.ke</li>
             <li className="flex gap-2"><Clock className="h-4 w-4 shrink-0 text-gold" /> Mon–Sat · 8:00 – 18:00</li>
           </ul>
         </div>
@@ -48,7 +48,7 @@ export function Footer() {
 
       <div className="border-t border-gold/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-xs uppercase tracking-[0.22em] text-stone-500 md:flex-row">
-          <p>© {new Date().getFullYear()} Hines Kenya </p>
+          <p>© {new Date().getFullYear()} lulu mean Kenya </p>
           <p className="text-gold">Nairobi · Kenya</p>
         </div>
       </div>

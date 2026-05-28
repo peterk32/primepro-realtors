@@ -8,11 +8,11 @@ import { SectionHeader } from "@/components/SectionHeader";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — hines properties" },
+      { title: "Contact — lulu mean properties" },
       {
         name: "description",
         content:
-          "Reach hines properties at Pili Trade Centre,kilimani road . Book a viewing or send us a confidential enquiry.",
+          "Reach lulu means properties at Pili Trade Centre,kilimani road . Book a viewing or send us a confidential enquiry.",
       },
     ],
   }),
@@ -29,7 +29,7 @@ function ContactPage() {
     const text = encodeURIComponent(
       `Hi Mandela-Max, I am ${form.name}${form.email ? ` (${form.email})` : ""}${form.phone ? ` — ${form.phone}` : ""}.\n\n${form.message}`,
     );
-    window.open(`https://wa.me/254703699498?text=${text}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/254797205584?text=${text}`, "_blank", "noopener,noreferrer");
     setSent(true);
   }
 
@@ -124,8 +124,8 @@ function ContactPage() {
           {/* Info */}
           <aside className="space-y-4">
             <InfoCard icon={MapPin} label="Headquarters" lines={["Pili Trade Centre", "Thika Road, Nairobi"]} />
-            <InfoCard icon={Phone} label="WhatsApp & Calls" lines={["+254 703 699 498"]} />
-            <InfoCard icon={Mail} label="Email" lines={["hello@Hinesproperties.co.ke"]} />
+            <InfoCard icon={Phone} label="WhatsApp & Calls" lines={["+254 797 205 584"]} />
+            <InfoCard icon={Mail} label="Email" lines={["hello@lulumeans.co.ke"]} />
             <InfoCard icon={Clock} label="Operating Hours" lines={["Mon – Sat · 8:00 – 18:00", "Sun · By appointment"]} />
           </aside>
         </div>
