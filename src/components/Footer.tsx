@@ -8,10 +8,10 @@ export function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-sm border border-gold/40 bg-stone-900 font-serif text-lg text-gold">
-              M
+              k
             </span>
             <span className="font-serif text-xl text-stone-50">
-              Mandela-Max <span className="text-gold">Properties</span>
+              kesmart <span className="text-gold">homes</span>
             </span>
           </div>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-stone-400">
@@ -40,7 +40,7 @@ export function Footer() {
           <ul className="space-y-3 text-sm text-stone-300">
             <li className="flex gap-2"><MapPin className="h-4 w-4 shrink-0 text-gold" /> Thika road, Thika Kenya</li>
             <li className="flex gap-2"><Phone className="h-4 w-4 shrink-0 text-gold" /> +254 745134384</li>
-            <li className="flex gap-2"><Mail className="h-4 w-4 shrink-0 text-gold" /> hello@mandelamax.co.ke</li>
+            <li className="flex gap-2"><Mail className="h-4 w-4 shrink-0 text-gold" /> hello@kesmarthomes.co.ke</li>
             <li className="flex gap-2"><Clock className="h-4 w-4 shrink-0 text-gold" /> Mon–Sat · 8:00 – 18:00</li>
           </ul>
         </div>

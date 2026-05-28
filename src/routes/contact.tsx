@@ -123,9 +123,9 @@ function ContactPage() {
 
           {/* Info */}
           <aside className="space-y-4">
-            <InfoCard icon={MapPin} label="Headquarters" lines={["Pili Trade Centre", "Mombasa Road, Nairobi"]} />
-            <InfoCard icon={Phone} label="WhatsApp & Calls" lines={["+254 972 055 584"]} />
-            <InfoCard icon={Mail} label="Email" lines={["hello@mandelamax.co.ke"]} />
+            <InfoCard icon={MapPin} label="Headquarters" lines={["Pili Trade Centre", "Thika Road, Nairobi"]} />
+            <InfoCard icon={Phone} label="WhatsApp & Calls" lines={["+254 745 134 384"]} />
+            <InfoCard icon={Mail} label="Email" lines={["hello@kesmarthomes.co.ke"]} />
             <InfoCard icon={Clock} label="Operating Hours" lines={["Mon – Sat · 8:00 – 18:00", "Sun · By appointment"]} />
           </aside>
         </div>
