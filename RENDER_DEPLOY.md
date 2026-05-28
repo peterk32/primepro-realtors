@@ -1,4 +1,4 @@
-# Deploying Mandela-Max Properties to Render (Free Tier)
+# Deploying kesmarthomes to Render (Free Tier)
 
 This project is configured so Render's default `npm run build` creates a Node SSR build.
 Lovable Preview still runs with Lovable's own development server.

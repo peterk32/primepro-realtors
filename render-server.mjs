@@ -102,5 +102,5 @@ createServer(async (req, res) => {
     res.end("Internal Server Error");
   }
 }).listen(port, "0.0.0.0", () => {
-  console.log(`Mandela-Max Properties listening on port ${port}`);
+  console.log(`kesmarthomes listening on port ${port}`);
 });

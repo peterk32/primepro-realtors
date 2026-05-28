@@ -16,7 +16,7 @@ const propertiesQuery = queryOptions({
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mandela-Max Properties — Boutique Nairobi Real Estate" },
+      { title: "kesmarthomes — Boutique Nairobi Real Estate" },
       {
         name: "description",
         content:

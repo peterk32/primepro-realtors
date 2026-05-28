@@ -8,11 +8,11 @@ import { SectionHeader } from "@/components/SectionHeader";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Mandela-Max Properties" },
+      { title: "Contact — kesmarthomes" },
       {
         name: "description",
         content:
-          "Reach Mandela-Max Properties at Pili Trade Centre,kilimani road . Book a viewing or send us a confidential enquiry.",
+          "Reach kesmarthomes at Pili Trade Centre,kilimani road . Book a viewing or send us a confidential enquiry.",
       },
     ],
   }),
@@ -29,7 +29,7 @@ function ContactPage() {
     const text = encodeURIComponent(
       `Hi Mandela-Max, I am ${form.name}${form.email ? ` (${form.email})` : ""}${form.phone ? ` — ${form.phone}` : ""}.\n\n${form.message}`,
     );
-    window.open(`https://wa.me/254722979636?text=${text}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/254745134384?text=${text}`, "_blank", "noopener,noreferrer");
     setSent(true);
   }
 

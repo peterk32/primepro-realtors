@@ -38,8 +38,8 @@ export function Footer() {
             Visit Us
           </h4>
           <ul className="space-y-3 text-sm text-stone-300">
-            <li className="flex gap-2"><MapPin className="h-4 w-4 shrink-0 text-gold" /> Kilimani road, Kilimani Kenya</li>
-            <li className="flex gap-2"><Phone className="h-4 w-4 shrink-0 text-gold" /> +254 722 979636</li>
+            <li className="flex gap-2"><MapPin className="h-4 w-4 shrink-0 text-gold" /> Thika road, Thika Kenya</li>
+            <li className="flex gap-2"><Phone className="h-4 w-4 shrink-0 text-gold" /> +254 745134384</li>
             <li className="flex gap-2"><Mail className="h-4 w-4 shrink-0 text-gold" /> hello@mandelamax.co.ke</li>
             <li className="flex gap-2"><Clock className="h-4 w-4 shrink-0 text-gold" /> Mon–Sat · 8:00 – 18:00</li>
           </ul>
@@ -48,7 +48,7 @@ export function Footer() {
 
       <div className="border-t border-gold/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-xs uppercase tracking-[0.22em] text-stone-500 md:flex-row">
-          <p>© {new Date().getFullYear()} Mandela-Max Properties</p>
+          <p>© {new Date().getFullYear()} kesmarthomes</p>
           <p className="text-gold">Nairobi · Kenya</p>
         </div>
       </div>
