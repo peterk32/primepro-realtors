@@ -34,9 +34,9 @@ export function Navbar() {
           <span className="grid h-10 w-10 place-items-center rounded-sm border border-gold/40 bg-stone-950/60 font-serif text-lg text-gold">
             L
           </span>
-          <span className="font-serif text-xl tracking-wide text-stone-50">
-            lulu means <span className="text-gold">Properties</span>
-          </span>
+           <span className="font-serif text-xl tracking-wide text-stone-50">
+             primepro realtors <span className="text-gold">Properties</span>
+           </span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
