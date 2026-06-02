@@ -72,17 +72,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "kesmarthomes — Boutique Nairobi Real Estate" },
+      { title: "primepro realtors — Boutique Nairobi Real Estate" },
       {
         name: "description",
         content:
           "A boutique Nairobi atelier curating warm, light-filled luxury residences, executive suites, and family villas.",
       },
-      { name: "author", content: "kesmarthomes" },
-      { property: "og:title", content: "kesmarthomes" },
+      { name: "author", content: "primepro realtors" },
+      { property: "og:title", content: "primepro realtors" },
       {
         property: "og:description",
-        content: "Boutique luxury real estate in Nairobi.",
+        content: "Boutique luxury residences, executive suites, and family villas curated across Nairobi.",
       },
       { property: "og:type", content: "website" },
     ],
